@@ -1,0 +1,36 @@
+body {
+    background-color: cornsilk;
+    text-align: center;
+}
+
+#div {
+    background-color: black;
+    color: ivory;
+    padding: 20px;
+}
+
+#text {
+    margin: 10px;
+}
+
+#buttonAdd {
+    background-color: green;
+    color: ivory;
+    padding: 5px;
+}
+
+#buttonRemoveLast {
+    background-color: orange;
+    color: ivory;
+    padding: 5px;
+}
+
+#buttonClear {
+    background-color: orangered;
+    color: ivory;
+    padding: 5px;
+}
+
+.paraClass {
+    font-family: cursive;
+}
