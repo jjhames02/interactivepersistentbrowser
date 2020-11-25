@@ -16,14 +16,16 @@ function loadLocal() {
 
 loadLocal();
 
-function addPara() {
-    const newPara = document.createElement("p");
-    newPara.innerText = text.value;
-    newPara.className = "paraClass";
-    div.appendChild(newPara);
-    const paragraphs = document.getElementsByClassName("paraClass");
-    const keyNum = paragraphs.length;
-    localStorage.setItem(keyNum, newPara.innerText);
+function addPara() {    
+    if (text.value != "") {
+        const newPara = document.createElement("p");
+        newPara.innerText = text.value;
+        newPara.className = "paraClass";
+        div.appendChild(newPara);        
+        const paragraphs = document.getElementsByClassName("paraClass");
+        const keyNum = paragraphs.length;        
+        localStorage.setItem(keyNum, newPara.innerText);
+    } 
     text.value = "";
 }
 
